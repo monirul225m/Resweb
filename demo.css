@@ -1,0 +1,178 @@
+*{
+	box-sizing: border-box;
+}
+body html{
+	padding: 0;
+	margin: 0 ;
+}
+
+.navcontainer{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 0;
+	height: 100%;
+	z-index: 2;
+	background: #996;
+	overflow-x: hidden;
+	box-shadow: 1px 1px 2px grey;
+	transition: 1s;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+	padding-top: 90px;
+}
+
+.navcontainer a{
+	text-decoration: none;
+	transition: 1s;
+	padding: 20px;
+	display: block;
+}
+
+.navcontainer a:hover{
+	background: hotpink;
+	color:white;
+}
+
+.navcontainer #clsenav{
+	position: absolute;
+	top:0;
+	right: 0;
+	font-size: 33px;
+}
+
+.logincontainer{
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	visibility:hidden;
+	opacity: 0;
+	transition: opacity 1s visibility 1s;
+	box-shadow: 1px 1px 2px grey;
+	z-index: 3;
+	background: #667;
+	
+}
+
+.logincontainer.show{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+#hidingbtn{
+	font-size: 33px;
+	position: fixed;
+	top:0;
+	right: 5px;
+	text-decoration: none;
+	transition: 0.1s;
+}
+
+#hidingbtn:hover{
+	color:white;
+}
+
+
+/*These code for main page content*/
+.containerdiv {
+	width: 100%;
+	height: auto;
+	background: #bb6;
+	display: flex;
+}
+
+	.containerdiv .part1{
+		width: 20%;
+		background: greenyellow;
+	}
+
+	.containerdiv .part2{
+		width: 60%;
+		background: hotpink;
+	}
+
+	.containerdiv .part3{
+		width: 20%;
+		background: darkmagenta;
+	}
+
+
+@media screen and (max-width: 767px) {
+	.containerdiv {
+		display: block;
+	}
+
+		.containerdiv .part1{
+		background: greenyellow;
+		width: 100%;
+	}
+
+	.containerdiv .part2{
+		background: hotpink;
+		width: 100%;
+	}
+
+	.containerdiv .part3{
+		background: darkmagenta;
+		width: 100%;
+	}
+}
+
+/*These code for main page content*/
+
+/*These code for footer*/
+
+#footercontainer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: #875874;
+	border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#footercontainer div{
+	width: calc(50%-20px);
+	max-width: 300px;
+
+}
+
+#footercontainer a{
+	display: block;
+	text-decoration: none;
+	color:white;
+	padding: 8px;
+}
+
+#footercontainer a:hover{
+	background: grey;
+	
+}
+
+.footerbtm{
+	text-align: center;
+	background: #433;
+	padding: 5px;
+	color:white;
+}
+
+
+@media screen and (max-width: 767px) {
+	#footercontainer div{
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/*These code for footer*/
+
+.opnnav{
+	box-shadow: 2px 1px 2px grey;
+	width: 100%;
+	background:#875874;
+	padding: 3px;
+
+}
